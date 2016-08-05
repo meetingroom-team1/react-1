@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="./bower_components/react/react.min.js"></script>
+    <script src="./bower_components/react/react-dom.min.js"></script>
+    <script src="./bower_components/babel/browser.min.js"></script>
+</head>
+<body>
+<div id="example"></div>
+
+<script type="text/babel">
+    class TodoList extends React.Component {
+        render(){
+            return (
+                    <h1>Hello, I am a todoList!</h1>
+            );
+        }
+    }
+
+    class TodoBox extends React.Component {
+        render(){
+            return (
+                    <h1>Hello, I am a todoBox!</h1>
+            );
+        }
+    }
+    class Todo extends React.Component {
+        render(){
+            return (
+               <div><TodoList/>,<TodoBox/></div>
+            );
+        }
+    }
+
+    ReactDOM.render(
+            <Todo/>,
+            document.getElementById('example')
+    );
+</script>
+</body>
+</html>
