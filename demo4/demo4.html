@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="./bower_components/react/react.min.js"></script>
+    <script src="./bower_components/react/react-dom.min.js"></script>
+    <script src="./bower_components/babel/browser.min.js"></script>
+</head>
+<body>
+<div id="a"></div>
+<script type="text/babel">
+    let Demo = React.createClass({
+        render:function () {
+            return (
+                    <h1>this is a MyComponent</h1>
+            )
+        }
+    });
+    ReactDOM.render(
+            <Demo />,
+            document.getElementById('a')
+    )
+</script>
+</body>
+</html>
